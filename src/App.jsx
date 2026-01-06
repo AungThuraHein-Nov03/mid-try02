@@ -1,16 +1,14 @@
 import Home from './components/home.jsx'
 import Profile from './components/profile.jsx'
-import {Route, Routes} from 'react-router-dom'
+import { Route, Routes, Link } from 'react-router-dom'  // Add Link here
 import './App.css'
 
 function App() {
-
   return (
     <div>
-      
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/profile' element={<Profile/>}/>
+        <Route path='/' element={<Home />} />
+        <Route path='/profile' element={<Profile />} />
       </Routes>
     </div>
   )
